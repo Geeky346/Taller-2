@@ -11,7 +11,7 @@ public class Program
 {
     //Suma
     static void Main(string[] args)
-    {
+ {
        OperacionX Operacion = Suma;
        OperacionX Operacion1 = Resta;
        OperacionX Operacion2 = Multi;
@@ -33,25 +33,49 @@ public class Program
                     int resultado = Operacion(num1, num2);
                     Console.WriteLine("La suma de los numeros "+ num1+" y "+num2+" es:"+resultado);
                     break;
-    case 2:
-     //RESTA
+        case 2:
+        //RESTA
         int resultado1 = Operacion1(num1, num2);
         Console.WriteLine("La resta de los numeros " + num1 + " y " + num2 + " es: " + resultado1);
         break;
-     case 3:
+       case 3:
         //MULTIPLICACIÓN
         int resultado2 = Operacion2(num1, num2);
         Console.WriteLine("La multiplicación de los numeros " + num1 +" y " + num2 + " es: " + resultado2);
         break;
-    case 4:
+      case 4:
         //DIVISIÓN
         int resultado3 = Operacion3(num1, num2);
         Console.WriteLine("La división de los numeros " + num1 + " y " + num2 + " es: " + resultado3);
         break;
-    case 5:
+       case 5:
         //RESIDUO
         int resultado4 = Operacion4(num1, num2);
         Console.WriteLine("El residuo de la división de los números " + num1 + " y " + num2 + " es: ss" + resultado4);
         break;
+}
+        
+        public static int Suma(int n, int a)
+        {
+            return n + a;
+        }
+        public static int Resta(int n, int a)
+        {
+            return n - a;
+        }
+        public static int Multi(int n, int a)
+        {
+            return n * a;
+        }
+        public static int Divi(int n, int a)
+        {
+            return n / a;
+        }
+        public static int Residuo(int n, int a)
+        {
+            return n % a;
+        }
+
+        //
     }
 }
