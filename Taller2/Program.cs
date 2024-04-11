@@ -33,9 +33,25 @@ public class Program
                     int resultado = Operacion(num1, num2);
                     Console.WriteLine("La suma de los numeros "+ num1+" y "+num2+" es:"+resultado);
                     break;
-                case 2:
-                    //RESTA
-                    int resultado1 = Operacion1(num1, num2);
-                    Console.WriteLine("La resta de los numeros " + num1 + " y " + num2 + " es: " + resultado1);
-                    break;
+    case 2:
+     //RESTA
+        int resultado1 = Operacion1(num1, num2);
+        Console.WriteLine("La resta de los numeros " + num1 + " y " + num2 + " es: " + resultado1);
+        break;
+     case 3:
+        //MULTIPLICACIÓN
+        int resultado2 = Operacion2(num1, num2);
+        Console.WriteLine("La multiplicación de los numeros " + num1 +" y " + num2 + " es: " + resultado2);
+        break;
+    case 4:
+        //DIVISIÓN
+        int resultado3 = Operacion3(num1, num2);
+        Console.WriteLine("La división de los numeros " + num1 + " y " + num2 + " es: " + resultado3);
+        break;
+    case 5:
+        //RESIDUO
+        int resultado4 = Operacion4(num1, num2);
+        Console.WriteLine("El residuo de la división de los números " + num1 + " y " + num2 + " es: ss" + resultado4);
+        break;
+    }
 }
