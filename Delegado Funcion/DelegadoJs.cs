@@ -38,7 +38,21 @@
             // Creación de instancias del delegado y asignación de funciones
             OperacionMatematica operacion;
 
+            operacion = Sumar;
+            Console.WriteLine($"Suma: {num1} + {num2} = {operacion(num1, num2)}");
 
+            operacion = Restar;
+            Console.WriteLine($"Resta: {num1} - {num2} = {operacion(num1, num2)}");
+
+            operacion = Multiplicar;
+            Console.WriteLine($"Multiplicación: {num1} * {num2} = {operacion(num1, num2)}");
+
+            operacion = Dividir;
+            Console.WriteLine($"División: {num1} / {num2} = {operacion(num1, num2)}");
         }
+    
+
+
+
     }
 }
