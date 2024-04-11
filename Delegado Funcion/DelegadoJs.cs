@@ -27,7 +27,8 @@
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            double num1 = 10;
+            double num2 = 5;
 
 
         }
