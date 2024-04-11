@@ -1,7 +1,12 @@
 ﻿namespace delegado
 {
+
+ 
     internal class Program
-    {
+    {  
+        
+        delegate double OperacionMatematica(double a, double b);
+
         // Funciones para realizar las operaciones matemáticas
         static double Sumar(double a, double b)
         {
@@ -29,6 +34,9 @@
         {
             double num1 = 10;
             double num2 = 5;
+
+            // Creación de instancias del delegado y asignación de funciones
+            OperacionMatematica operacion;
 
 
         }
